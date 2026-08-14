@@ -1,4 +1,6 @@
 function Resume() {
+  const resumeUrl = `${import.meta.env.BASE_URL}resume.pdf`;
+
   return (
     <section id="resume" className="portfolio-section">
 
@@ -23,7 +25,7 @@ function Resume() {
         <div className="resume-buttons">
 
           <a
-            href="/resume.pdf"
+            href={resumeUrl}
             target="_blank"
             rel="noopener noreferrer"
             className="resume-btn primary"
@@ -32,7 +34,7 @@ function Resume() {
           </a>
 
           <a
-            href="/resume.pdf"
+            href={resumeUrl}
             download="Ram-Sharan-Upadhyay-Resume.pdf"
             className="resume-btn"
           >
